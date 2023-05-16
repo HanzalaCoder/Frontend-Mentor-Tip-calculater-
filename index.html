@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/stytle.css">
+</head>
+<body>
+  <h1 class="logo">SPLT <br> TTER</h1>
+  <section class="container">
+    <div class="info-taken">
+      <div class="first-info">
+        <label for="Bill" class="label bill-label">Bill</label>
+        <input class="amount text-amount text" type="text"  placeholder="$ 0" id="amount">
+      </div>
+      <h5 class="heading-tip">Select Tip %</h5>
+      <div class="tip">
+        <button type="button" class="btn  ">5%</button>
+        <button type="button" class="btn ">10%</button>
+        <button type="button" class="btn activeone ">15%</button>
+        <button type="button" class="btn ">25%</button>
+        <button type="button" class="btn ">50%</button>
+        <input class="custom-tip btn" type="text"  placeholder="Custom" id="customtip">
+      </div>
+      <div class="second-info">
+        <div class="message-flex">
+        <label for="People" class="label people-label">Number of people</label> <small class="message">Can't be Zero</small>
+        </div>
+        <input class="People people-amount text" type="text"  placeholder="men 0" id="people">
+      </div>
+    </div>
+    <div class="result-show">
+      <div class="flex1">
+        <h4 class="header">Tip Amount <br> <span class="footer">/person</span></h4>
+         <h3 class="result-person result">$ 0.0</h3>
+      </div>
+
+      <div class="flex2">
+        <h4 class="header">Total <br> <span class="footer">/person</span></h4>
+         <h3 class="result-total result">$ 0.00</h3>
+      </div>
+      <button type="reset" class="reset-calcu reset-btn">RESET</button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
